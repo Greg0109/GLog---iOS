@@ -13,8 +13,8 @@ First ensure you have python installed on your PC and that the logging system is
 
 ## Prequisites
 
-Python installed on the machine
-Terminal or similar to launch and see the server data
+- Python installed on the machine
+- Terminal or similar to launch and see the server data
 
 ## Install
 
