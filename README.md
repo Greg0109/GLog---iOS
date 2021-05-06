@@ -24,9 +24,15 @@ Download a copy of the repository
 
 In your project, import your files properly and set it up like so
 
+```#import "GLog.h"```
+
 ```GLog *log = [[GLog alloc] initWithIP:@"place-computer-ip-or-hostname-here"];```
 
 ```[log sendLog:@"Your logs"];```
+
+If you are using this with an iOS tweak, you also need to add it to the makefile
+
+```TweakName_FILES = Tweak.x GLog.m```
 
 In your pc, just start the server in terminal like so
 
