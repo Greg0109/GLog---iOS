@@ -2,6 +2,7 @@
 from flask import Flask, request
 import base64
 import logging
+import sys
 
 log = logging.getLogger('werkzeug')
 log.setLevel(logging.ERROR)
@@ -16,8 +17,12 @@ def result():
         print('%s' % text)
     return '\n'
 
-def runServer():
-    app.run(host='0.0.0.0', debug=False)
+def runServer(port):
+    app.run(host='0.0.0.0', port=port, debug=False)
 
 if __name__ == "__main__":
-    runServer()
+    if len(sys.argv) > 1:
+        port = int(sys.argv[1])
+    else:
+        port = 5000
+    runServer(port)
