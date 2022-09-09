@@ -1,4 +1,4 @@
-# GLog - Logging system for iOS
+# GLog iOS - Logging system for iOS
 
 This is GLog, a new logging system for iOS that allows you to debug your code in an easy and comfortable way. Just place the files where needed, start the logger with the computer ip, log your code and start the server on the computer side and done.
 
